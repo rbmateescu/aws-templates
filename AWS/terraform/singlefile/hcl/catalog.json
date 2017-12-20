@@ -9,7 +9,7 @@
     "manifest": {
       "template_type": "Terraform",
       "template_format": "HCL",
-      "template_provider": "Amazon EC2i Proxy",
+      "template_provider": "Amazon EC2 Proxy",
       "template": {
         "templateData":"",
         "templateVariables": "",
