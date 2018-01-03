@@ -17,7 +17,7 @@
         "label": "AWS STS token", 
         "name": "aws_token", 
         "required": true, 
-        "secured": false, 
+        "secured": true, 
         "type": "string"
     }, 
     {
