@@ -1,8 +1,6 @@
 provider "aws" {
  region = "${var.aws_region}"
  token  = "${var.aws_token}"
- access_key = "${var.aws_access_key}"
- secret_key = "${var.aws_secret_key}"
 }
 
 variable "aws_region" {
@@ -12,14 +10,6 @@ variable "aws_region" {
 
 variable "aws_token" {
   description = "AWS STS security token."
-}
-
-variable "aws_access_key" {
-  description = "AWS STS access key."
-}
-
-variable "aws_secret_key" {
-  description = "AWS STS secret key."
 }
 
 variable "vpc_name_tag" {
