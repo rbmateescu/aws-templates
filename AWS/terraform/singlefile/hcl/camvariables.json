@@ -11,6 +11,36 @@
         "type": "string"
     }, 
     {
+        "description": "AWS STS token.", 
+        "hidden": false, 
+        "immutable": false, 
+        "label": "AWS STS token", 
+        "name": "aws_token", 
+        "required": true, 
+        "secured": false, 
+        "type": "string"
+    }, 
+    { 
+        "description": "AWS STS access key.", 
+        "hidden": false, 
+        "immutable": false, 
+        "label": "AWS STS access key", 
+        "name": "aws_access_key", 
+        "required": true, 
+        "secured": true, 
+        "type": "string"
+    }, 
+    {
+        "description": "AWS STS secret key.", 
+        "hidden": false, 
+        "immutable": false, 
+        "label": "AWS STS secret key", 
+        "name": "aws_secret_key", 
+        "required": true, 
+        "secured": true, 
+        "type": "string"
+    },
+    {
         "description": "Name of the Virtual Private Cloud (VPC) this resource is going to be deployed into", 
         "hidden": false, 
         "immutable": false, 
