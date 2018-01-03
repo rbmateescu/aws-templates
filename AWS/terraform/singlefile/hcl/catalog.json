@@ -1,5 +1,5 @@
  {
-    "name": "Amazon EC2 Proxy Virtual Server with SSH key",
+    "name": "Amazon EC2 STS virtual machine",
     "description": "Amazon EC2 Ubuntu 14.04 virtual server under an existing Virtual Private Cloud (VPC).",
     "version": "1.0.0.0",
     "imageUrl": "./assets/svg/IBM_WebSphere_Standalone.svg",
@@ -9,7 +9,7 @@
     "manifest": {
       "template_type": "Terraform",
       "template_format": "HCL",
-      "template_provider": "Amazon EC2 Proxy",
+      "template_provider": "Amazon EC2",
       "template": {
         "templateData":"",
         "templateVariables": "",
@@ -23,7 +23,7 @@
       }
     },
     "metadata": {
-      "displayName": "Amazon EC2 Proxy Virtual Server with SSH Key",
+      "displayName": "Amazon EC2 STS virtual machine",
       "providerDisplayName": "IBM",
       "longDescription": "Use this cloud resource template to quickly provision a Ubuntu 14.04 64 bit virtual server with ssh key into an existing Virtual Private Cloud (VPC) and on an existing network.",
       "bullets": [
