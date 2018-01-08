@@ -45,6 +45,10 @@ data "aws_subnet" "selected" {
 
 }
 
+data "aws_security_group" "selected" {
+  id = "${var.security_group_id}"
+}
+
 variable "public_ssh_key_name" {
   description = "Name of the public SSH key used to connect to the virtual guest"
 }
@@ -52,6 +56,11 @@ variable "public_ssh_key_name" {
 variable "public_ssh_key" {
   description = "Public SSH key used to connect to the virtual guest"
 }
+
+variable "security_group_id" {
+  description = "security_group"
+}
+
 
 # Ubuntu 14.04.01 as documented at https://cloud-images.ubuntu.com/releases/14.04/14.04.1/
 variable "aws_amis" {
@@ -71,4 +80,5 @@ resource "aws_instance" "orpheus_ubuntu_micro" {
   ami = "${lookup(var.aws_amis, var.aws_region)}"
   subnet_id = "${data.aws_subnet.selected.id}"
   key_name = "${aws_key_pair.orpheus_public_key.id}"
+  vpc_security_group_ids = "${data.aws_security_group.selected.id}"
 }
