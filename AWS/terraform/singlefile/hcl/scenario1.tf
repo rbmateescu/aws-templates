@@ -80,5 +80,5 @@ resource "aws_instance" "orpheus_ubuntu_micro" {
   ami = "${lookup(var.aws_amis, var.aws_region)}"
   subnet_id = "${data.aws_subnet.selected.id}"
   key_name = "${aws_key_pair.orpheus_public_key.id}"
-  vpc_security_group_ids = "${data.aws_security_group.selected.id}"
+  vpc_security_group_ids = ["${data.aws_security_group.selected.id}"]
 }
