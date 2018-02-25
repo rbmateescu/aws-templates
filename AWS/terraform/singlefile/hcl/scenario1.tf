@@ -9,6 +9,7 @@ variable "aws_region" {
 
 variable "vpc_name_tag" {
   description = "Name of the Virtual Private Cloud (VPC) this resource is going to be deployed into"
+  default = "CAMVPC"
 }
 
 variable "subnet_cidr" {
