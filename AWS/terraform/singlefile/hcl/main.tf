@@ -33,7 +33,7 @@ resource "aws_key_pair" "orpheus_public_key" {
     public_key = "${var.public_ssh_key}"
 }
 
-resource "aws_instance" "orpheus_ubuntu_micro" {
+resource "aws_instance" "ubuntu_micro" {
   instance_type = "t2.micro"
   ami = "${lookup(var.aws_amis, var.aws_region)}"
   subnet_id = "${data.aws_subnet.selected.id}"

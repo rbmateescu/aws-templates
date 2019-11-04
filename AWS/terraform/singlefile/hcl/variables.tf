@@ -3,6 +3,11 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
+variable "flavor" {
+  description = "VM flavor."
+  default     = "t2.micro"
+}
+
 variable "vpc_name_tag" {
   description = "Name of the Virtual Private Cloud (VPC) this resource is going to be deployed into"
   default = "CAMVPC"
