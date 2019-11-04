@@ -32,7 +32,7 @@ resource "aws_key_pair" "cascon_public_key" {
     public_key = "${var.public_ssh_key}"
 }
 
-resource "aws_instance" "ubuntu_micro" {
+resource "aws_instance" "ubuntu_cascon" {
   instance_type = "${var.flavor}"
   ami = "${lookup(var.aws_amis, var.aws_region)}"
   subnet_id = "${data.aws_subnet.selected.id}"
