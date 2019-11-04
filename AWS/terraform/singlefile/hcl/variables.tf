@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "flavor" {
   description = "VM flavor."
-  default     = "t2.micro"
+  default     = "t2.nano"
 }
 
 variable "vpc_name_tag" {

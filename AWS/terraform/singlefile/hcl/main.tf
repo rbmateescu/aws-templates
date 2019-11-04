@@ -13,7 +13,6 @@ data "aws_subnet" "selected" {
   state        = "available"
   vpc_id       = "${data.aws_vpc.selected.id}"
   cidr_block   = "${var.subnet_cidr}"
-
 }
 
 data "aws_security_group" "selected" {
