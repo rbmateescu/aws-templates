@@ -1,6 +1,6 @@
- {
-    "name": "Amazon EC2 Virtual Server with SSH key",
-    "description": "Amazon EC2 Ubuntu 14.04 virtual server under an existing Virtual Private Cloud (VPC).",
+{
+    "name": "TS003064522",
+    "description": "TS003064522",
     "version": "1.0.0.0",
     "imageUrl": "./assets/svg/IBM_WebSphere_Standalone.svg",
     "image": "tp_WAS_standalone.png",
@@ -18,40 +18,13 @@
       "template_source": {
         "githubRepoUrl": "",
         "githubAccessToken": "",
-        "relativePathToTemplateFolder": "AWS/terraform/singlefile/hcl",
-        "templateFileName": "scenario1.tf"
+        "relativePathToTemplateFolder": "cli",
+        "templateFileName": "main.tf"
       }
     },
     "metadata": {
-      "displayName": "Amazon EC2 Virtual Server with SSH Key",
+      "displayName": "TS003064522",
       "providerDisplayName": "IBM",
-      "longDescription": "Use this cloud resource template to quickly provision a Ubuntu 14.04 64 bit virtual server with ssh key into an existing Virtual Private Cloud (VPC) and on an existing network.",
-      "bullets": [
-       {
-         "title": "Clouds",
-         "description": "Amazon Web Services (AWS)"
-       },
-       {
-         "title": "Template version",
-         "description": "V1.0"
-       },
-       {
-         "title": "Operating systems supported",
-         "description": "AWS: Ubuntu 14.04.01 LTS (Trusty Tahr) "
-       },
-       {
-         "title": "Topology",
-         "description": "AWS: 1 virtual machine"
-       },
-       {
-         "title": "Default virtual machine settings",
-         "description": "<ul><li>AWS:<ul style=\"margin-left: 20px;\"><li>Flavor: t2.micro, Cores = 1, Memory = 1GB</li><li>Network: Private IP - Computed, Public IP - Computed</li></ul></li></ul>"
-       },       
-       {
-         "title": "Usage and special notes",
-         "description": "<ul><li>1. Creates a virtual server with an ssh key provided by the user into an existing virtual private cloud specified by the user.</li><li>2. Deployment takes approximately 5 minutes to complete.</li><li>3. To access the application and virtual machines, please see the instructions in the output log.</li></ul>"
-       }
-     ],
       "featuredImageUrl": "https://ibmpatternengine-staticcontent-prod.eu-gb.mybluemix.net/ic_patternengine_50.png",
       "imageUrl": "https://ibmpatternengine-staticcontent-prod.eu-gb.mybluemix.net/ic_patternengine_50.png",
       "mediumImageUrl": "https://ibmpatternengine-staticcontent-prod.eu-gb.mybluemix.net/ic_patternengine_32.png",
